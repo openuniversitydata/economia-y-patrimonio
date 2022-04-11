@@ -1,0 +1,41 @@
+ @prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.owl-ontologies.com/geo#> .
+@prefix geosparql: <http://www.owl-ontologies.com/geosparql#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix univPrGas: <http://vocab.universidadesabiertas.es/ontology/economia-y-patrimonio#PresupuestoGastos> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+univPrGas:Gasto_0273 a univPrGas:Gasto ;
+    univPrGas:fechaReferencia "2022-03-15"^^xsd:date ;
+    univPrGas:creditoInicial "25000"^^xsd:integer ;
+    univPrGas:modificaciones "1500"^^xsd:integer ;
+    univPrGas:creditoTotal "26500"^^xsd:integer ;
+    univPrGas:gastosComprometidos "2000"^^xsd:integer ;
+    univPrGas:obligacionesReconocidas "2000"^^xsd:integer ;
+    univPrGas:pagosNetos "2000"^^xsd:integer ;
+    univPrGas:capitulo <http://vocab.universidadesabiertas.es/kos/capitulo/gastos-de-personal> ;
+    univPrGas:articulo <http://vocab.universidadesabiertas.es/kos/articulo/personal-administrativo-y-servicios> ;
+    univPrGas:concepto <http://vocab.universidadesabiertas.es/kos/concepto/equipo-de-mantenimiento> ;
+    univPrGas:subconcepto <http://vocab.universidadesabiertas.es/kos/subconcepto/equipo-de-limpieza-y-mantenimiento-cafeteria> ;
+    univPrGas:partida <http://vocab.universidadesabiertas.es/kos/partida/equipo-de-limpieza-y-mantenimiento-cafeteria-salon-inferior> ;
+    univPrGas:seccion <http://vocab.universidadesabiertas.es/kos/seccion/campus-y-centros> ;
+    univPrGas:servicio <http://vocab.universidadesabiertas.es/kos/servicio/campus-de-montegancedo> ;
+    univPrGas:unidadDeCoste <http://vocab.universidadesabiertas.es/kos/unidad-de-coste/PAS-campus-montegancedo> ;
+    univPrGas:organicaLibre1 <http://vocab.universidadesabiertas.es/kos/organica-libre-1/areas-de-uso-comun> ;
+    univPrGas:organicaLibre2 <http://vocab.universidadesabiertas.es/kos/organica-libre-2/cafeteria> ;
+    univPrGas:grupo <http://vocab.universidadesabiertas.es/kos/grupo/bienes-publicos-de-caracter-economico> ;
+    univPrGas:funcion <http://vocab.universidadesabiertas.es/kos/funcion/mantenimiento> ;
+    univPrGas:subfuncion <http://vocab.universidadesabiertas.es/kos/subfuncion/limpieza-y-cuidado-del-centro> ;
+    univPrGas:programa <http://vocab.universidadesabiertas.es/kos/programa/sostenibilidad-del-centro> ;
+    univPrGas:subprograma <http://vocab.universidadesabiertas.es/kos/subprograma/mantenimiento-cafeteria> ;
+    univPrGas:vinculadoA univPrGas:UPM ;
+    univPrGas:tieneAsociado univPrGas:2022 .
+    
+univPrGas:UPM a univPrGas:Universidad ;
+    dct:identifier "025"^^xsd:string ;
+    rdfs:subClassOf org:Organization .
+
+univPrGas:2022 a univPrGas:Anio .

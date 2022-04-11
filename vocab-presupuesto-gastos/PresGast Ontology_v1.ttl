@@ -1,0 +1,182 @@
+ @prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.owl-ontologies.com/geo#> .
+@prefix geosparql: <http://www.owl-ontologies.com/geosparql#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix univPrGas: <http://vocab.universidadesabiertas.es/ontology/economia-y-patrimonio#PresupuestoGastos> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dct:identifier a owl:DatatypeProperty ;
+    rdfs:label "identifier" ;
+    rdfs:domain univPrGas:Universidad ;
+    rdfs:range xsd:string .
+
+univPrGas: a owl:Ontology ;
+    dc:creator "Víctor Morcuende" ;
+    dc:description "Ontology code created by Chowlk" ;
+    dc:title "PresGast Ontology" ;
+    owl:versionInfo "0.0.1" .
+
+univPrGas:articulo a owl:ObjectProperty ;
+    rdfs:label "articulo" ;
+    rdfs:domain univPrGas:Gasto .
+
+univPrGas:capitulo a owl:ObjectProperty ;
+    rdfs:label "capitulo" ;
+    rdfs:domain univPrGas:Gasto .
+
+univPrGas:concepto a owl:ObjectProperty ;
+    rdfs:label "concepto" ;
+    rdfs:domain univPrGas:Gasto .
+
+univPrGas:creditoInicial a owl:DatatypeProperty ;
+    rdfs:label "credito inicial" ;
+    rdfs:domain univPrGas:Gasto ;
+    rdfs:range xsd:integer .
+
+univPrGas:creditoTotal a owl:DatatypeProperty ;
+    rdfs:label "credito total" ;
+    rdfs:domain univPrGas:Gasto ;
+    rdfs:range xsd:integer .
+
+univPrGas:estaAsociadoA a owl:ObjectProperty ;
+    rdfs:label "esta asociado a" ;
+    rdfs:domain univPrGas:Anio ;
+    rdfs:range univPrGas:Gasto .
+
+univPrGas:fechaReferencia a owl:DatatypeProperty ;
+    rdfs:label "fecha referencia" ;
+    rdfs:domain univPrGas:Gasto ;
+    rdfs:range xsd:date .
+
+univPrGas:funcion a owl:ObjectProperty ;
+    rdfs:label "funcion" ;
+    rdfs:domain univPrGas:Gasto .
+
+univPrGas:gastosComprometidos a owl:DatatypeProperty ;
+    rdfs:label "gastos comprometidos" ;
+    rdfs:domain univPrGas:Gasto ;
+    rdfs:range xsd:integer .
+
+univPrGas:grupo a owl:ObjectProperty ;
+    rdfs:label "grupo" ;
+    rdfs:domain univPrGas:Gasto .
+
+univPrGas:modificaciones a owl:DatatypeProperty ;
+    rdfs:label "modificaciones" ;
+    rdfs:domain univPrGas:Gasto ;
+    rdfs:range xsd:integer .
+
+univPrGas:obligacionesReconocidas a owl:DatatypeProperty ;
+    rdfs:label "obligaciones reconocidas" ;
+    rdfs:domain univPrGas:Gasto ;
+    rdfs:range xsd:integer .
+
+univPrGas:organicaLibre1 a owl:ObjectProperty ;
+    rdfs:label "organica libre1" ;
+    rdfs:domain univPrGas:Gasto .
+
+univPrGas:organicaLibre2 a owl:ObjectProperty ;
+    rdfs:label "organica libre2" ;
+    rdfs:domain univPrGas:Gasto .
+
+univPrGas:pagosNetos a owl:DatatypeProperty ;
+    rdfs:label "pagos netos" ;
+    rdfs:domain univPrGas:Gasto ;
+    rdfs:range xsd:integer .
+
+univPrGas:partida a owl:ObjectProperty ;
+    rdfs:label "partida" ;
+    rdfs:domain univPrGas:Gasto .
+
+univPrGas:programa a owl:ObjectProperty ;
+    rdfs:label "programa" ;
+    rdfs:domain univPrGas:Gasto .
+
+univPrGas:seccion a owl:ObjectProperty ;
+    rdfs:label "seccion" ;
+    rdfs:domain univPrGas:Gasto .
+
+univPrGas:servicio a owl:ObjectProperty ;
+    rdfs:label "servicio" ;
+    rdfs:domain univPrGas:Gasto .
+
+univPrGas:subconcepto a owl:ObjectProperty ;
+    rdfs:label "subconcepto" ;
+    rdfs:domain univPrGas:Gasto .
+
+univPrGas:subfuncion a owl:ObjectProperty ;
+    rdfs:label "subfuncion" ;
+    rdfs:domain univPrGas:Gasto .
+
+univPrGas:subprograma a owl:ObjectProperty ;
+    rdfs:label "subprograma" ;
+    rdfs:domain univPrGas:Gasto .
+
+univPrGas:unidadDeCoste a owl:ObjectProperty ;
+    rdfs:label "unidad de coste" ;
+    rdfs:domain univPrGas:Gasto .
+
+univPrGas:vinculadoA a owl:ObjectProperty ;
+    rdfs:label "vinculado a" ;
+    rdfs:domain univPrGas:Gasto .
+
+geo:lat a owl:DatatypeProperty ;
+    rdfs:label "lat" ;
+    rdfs:domain geosparql:Point ;
+    rdfs:range xsd:double .
+
+geo:long a owl:DatatypeProperty ;
+    rdfs:label "long" ;
+    rdfs:domain geosparql:Point ;
+    rdfs:range xsd:double .
+
+geosparql:asWKT a owl:DatatypeProperty ;
+    rdfs:label "as w k t" ;
+    rdfs:domain geosparql:Geometry ;
+    rdfs:range xsd:wKTLiteral .
+
+geosparql:hasGeometry a owl:ObjectProperty ;
+    rdfs:label "has geometry" ;
+    rdfs:domain geosparql:Geometry ;
+    rdfs:range geosparql:Feature .
+
+org:hasSite a owl:ObjectProperty ;
+    rdfs:label "has site" ;
+    rdfs:domain org:Organization ;
+    rdfs:range org:Site .
+
+univPrGas:Anio a owl:Class ;
+    rdfs:label "Anio" .
+
+univPrGas:Universidad a owl:Class ;
+    rdfs:label "Universidad" ;
+    rdfs:subClassOf org:Organization .
+
+org:Site a owl:Class ;
+    rdfs:label "Site" ;
+    rdfs:subClassOf geosparql:Feature .
+
+geosparql:Feature a owl:Class ;
+    rdfs:label "Feature" ;
+    rdfs:subClassOf geosparql:SpatialObject .
+
+geosparql:Point a owl:Class ;
+    rdfs:label "Point" ;
+    rdfs:subClassOf geosparql:Geometry .
+
+geosparql:SpatialObject a owl:Class ;
+    rdfs:label "Spatial Object" .
+
+org:Organization a owl:Class ;
+    rdfs:label "Organization" .
+
+geosparql:Geometry a owl:Class ;
+    rdfs:label "Geometry" ;
+    rdfs:subClassOf geosparql:SpatialObject .
+
+univPrGas:Gasto a owl:Class ;
+    rdfs:label "Gasto" .
+
