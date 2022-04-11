@@ -1,0 +1,35 @@
+ @prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.owl-ontologies.com/geo#> .
+@prefix geosparql: <http://www.owl-ontologies.com/geosparql#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix univPrIng: <http://vocab.universidadesabiertas.es/ontology/economia-y-patrimonio#PresupuestoIngresos> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+univPrIng:Ingreso_0128 a univPrIng:Ingreso ;
+    univPrIng:fechaReferencia "2022-01-24"^^xsd:date ;
+    univPrIng:creditoInicial "350000"^^xsd:integer ;
+    univPrIng:modificaciones "2000"^^xsd:integer ;
+    univPrIng:creditoTotal "352000"^^xsd:integer ;
+    univPrIng:derechosReconocidosNetos "13000"^^xsd:integer ;
+    univPrIng:recaudacionNeta "12570"^^xsd:integer ;
+    univPrIng:capitulo <http://vocab.universidadesabiertas.es/kos/capitulo/tasas-precios-publicos-y-otros-ingresos> ;
+    univPrIng:articulo <http://vocab.universidadesabiertas.es/kos/articulo/precios-publicos> ;
+    univPrIng:concepto <http://vocab.universidadesabiertas.es/kos/concepto/derechos-de-matricula-en-ensenianza-oficial> ;
+    univPrIng:subconcepto <http://vocab.universidadesabiertas.es/kos/subconcepto/grado-primer-y-segundo-ciclo> ;
+    univPrIng:partida <http://vocab.universidadesabiertas.es/kos/partida/derechos-de-matricula-en-ingenieria-informatica> ;
+    univPrIng:seccion <http://vocab.universidadesabiertas.es/kos/seccion/campus-y-centros> ;
+    univPrIng:servicio <http://vocab.universidadesabiertas.es/kos/servicio/campus-de-montegancedo> ;
+    univPrIng:unidadDeCoste <http://vocab.universidadesabiertas.es/kos/unidad-de-coste/investigacion-campus-montegancedo> ;
+    univPrIng:organicaLibre1 <http://vocab.universidadesabiertas.es/kos/organica-libre-1/centros-de-investigacion> ;
+    univPrIng:organicaLibre2 <http://vocab.universidadesabiertas.es/kos/organica-libre-2/centro-de-tecnologia-biomedica> ;
+    univPrIng:vinculadoA univPrIng:UPM ;
+    univPrIng:tieneAsociado univPrIng:2022 .
+    
+univPrIng:UPM a univPrIng:Universidad ;
+    dct:identifier "025"^^xsd:string ;
+    rdfs:subClassOf org:Organization .
+
+univPrIng:2022 a univPrIng:Anio .

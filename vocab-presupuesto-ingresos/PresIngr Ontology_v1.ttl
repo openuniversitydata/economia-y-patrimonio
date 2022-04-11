@@ -1,0 +1,157 @@
+ @prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.owl-ontologies.com/geo#> .
+@prefix geosparql: <http://www.owl-ontologies.com/geosparql#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix univPrIng: <http://vocab.universidadesabiertas.es/ontology/economia-y-patrimonio#PresupuestoIngresos> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dct:identifier a owl:DatatypeProperty ;
+    rdfs:label "identifier" ;
+    rdfs:domain univPrIng:Universidad ;
+    rdfs:range xsd:string .
+
+univPrIng: a owl:Ontology ;
+    dc:creator "Víctor Morcuende" ;
+    dc:description "Ontology code created by Chowlk" ;
+    dc:title "PresIngr Ontology" ;
+    owl:versionInfo "0.0.1" .
+
+univPrIng:articulo a owl:ObjectProperty ;
+    rdfs:label "articulo" ;
+    rdfs:domain univPrIng:Ingreso .
+
+univPrIng:capitulo a owl:ObjectProperty ;
+    rdfs:label "capitulo" ;
+    rdfs:domain univPrIng:Ingreso .
+
+univPrIng:concepto a owl:ObjectProperty ;
+    rdfs:label "concepto" ;
+    rdfs:domain univPrIng:Ingreso .
+
+univPrIng:creditoInicial a owl:DatatypeProperty ;
+    rdfs:label "credito inicial" ;
+    rdfs:domain univPrIng:Ingreso ;
+    rdfs:range xsd:integer .
+
+univPrIng:creditoTotal a owl:DatatypeProperty ;
+    rdfs:label "credito total" ;
+    rdfs:domain univPrIng:Ingreso ;
+    rdfs:range xsd:integer .
+
+univPrIng:derechosReconocidosNetos a owl:DatatypeProperty ;
+    rdfs:label "derechos reconocidos netos" ;
+    rdfs:domain univPrIng:Ingreso ;
+    rdfs:range xsd:integer .
+
+univPrIng:estaAsociadoA a owl:ObjectProperty ;
+    rdfs:label "esta asociado a" ;
+    rdfs:domain univPrIng:Anio ;
+    rdfs:range univPrIng:Ingreso .
+
+univPrIng:fechaReferencia a owl:DatatypeProperty ;
+    rdfs:label "fecha referencia" ;
+    rdfs:domain univPrIng:Ingreso ;
+    rdfs:range xsd:date .
+
+univPrIng:modificaciones a owl:DatatypeProperty ;
+    rdfs:label "modificaciones" ;
+    rdfs:domain univPrIng:Ingreso ;
+    rdfs:range xsd:integer .
+
+univPrIng:organicaLibre1 a owl:ObjectProperty ;
+    rdfs:label "organica libre1" ;
+    rdfs:domain univPrIng:Ingreso .
+
+univPrIng:organicaLibre2 a owl:ObjectProperty ;
+    rdfs:label "organica libre2" ;
+    rdfs:domain univPrIng:Ingreso .
+
+univPrIng:partida a owl:ObjectProperty ;
+    rdfs:label "partida" ;
+    rdfs:domain univPrIng:Ingreso .
+
+univPrIng:recaudacionNeta a owl:DatatypeProperty ;
+    rdfs:label "recaudacion neta" ;
+    rdfs:domain univPrIng:Ingreso ;
+    rdfs:range xsd:integer .
+
+univPrIng:seccion a owl:ObjectProperty ;
+    rdfs:label "seccion" ;
+    rdfs:domain univPrIng:Ingreso .
+
+univPrIng:servicio a owl:ObjectProperty ;
+    rdfs:label "servicio" ;
+    rdfs:domain univPrIng:Ingreso .
+
+univPrIng:subconcepto a owl:ObjectProperty ;
+    rdfs:label "subconcepto" ;
+    rdfs:domain univPrIng:Ingreso .
+
+univPrIng:unidadDeCoste a owl:ObjectProperty ;
+    rdfs:label "unidad de coste" ;
+    rdfs:domain univPrIng:Ingreso .
+
+univPrIng:vinculadoA a owl:ObjectProperty ;
+    rdfs:label "vinculado a" ;
+    rdfs:domain univPrIng:Ingreso .
+
+geo:lat a owl:DatatypeProperty ;
+    rdfs:label "lat" ;
+    rdfs:domain geosparql:Point ;
+    rdfs:range xsd:double .
+
+geo:long a owl:DatatypeProperty ;
+    rdfs:label "long" ;
+    rdfs:domain geosparql:Point ;
+    rdfs:range xsd:double .
+
+geosparql:asWKT a owl:DatatypeProperty ;
+    rdfs:label "as w k t" ;
+    rdfs:domain geosparql:Geometry ;
+    rdfs:range xsd:wKTLiteral .
+
+geosparql:hasGeometry a owl:ObjectProperty ;
+    rdfs:label "has geometry" ;
+    rdfs:domain geosparql:Geometry ;
+    rdfs:range geosparql:Feature .
+
+org:hasSite a owl:ObjectProperty ;
+    rdfs:label "has site" ;
+    rdfs:domain org:Organization ;
+    rdfs:range org:Site .
+
+univPrIng:Anio a owl:Class ;
+    rdfs:label "Anio" .
+
+univPrIng:Universidad a owl:Class ;
+    rdfs:label "Universidad" ;
+    rdfs:subClassOf org:Organization .
+
+org:Site a owl:Class ;
+    rdfs:label "Site" ;
+    rdfs:subClassOf geosparql:Feature .
+
+geosparql:Feature a owl:Class ;
+    rdfs:label "Feature" ;
+    rdfs:subClassOf geosparql:SpatialObject .
+
+geosparql:Point a owl:Class ;
+    rdfs:label "Point" ;
+    rdfs:subClassOf geosparql:Geometry .
+
+geosparql:SpatialObject a owl:Class ;
+    rdfs:label "Spatial Object" .
+
+org:Organization a owl:Class ;
+    rdfs:label "Organization" .
+
+geosparql:Geometry a owl:Class ;
+    rdfs:label "Geometry" ;
+    rdfs:subClassOf geosparql:SpatialObject .
+
+univPrIng:Ingreso a owl:Class ;
+    rdfs:label "Ingreso" .
+
