@@ -163,7 +163,8 @@ ecpat:unidadDeCoste a owl:ObjectProperty ;
 
 ecpat:vinculadoA a owl:ObjectProperty ;
     rdfs:label "vinculado a" ;
-    rdfs:domain ecpat:PresupuestoIngresos .
+    rdfs:domain ecpat:PresupuestoIngresos ;
+    rdfs:range ecpat:Universidad .
 
 dct:identifier a owl:DatatypeProperty ;
     rdfs:label "identifier" ;
