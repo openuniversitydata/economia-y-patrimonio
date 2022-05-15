@@ -442,6 +442,12 @@
   <owl:ObjectProperty rdf:about="http://openuniversitydata/def/economia-y-patrimonio#vinculadoA">
     <rdfs:label>vinculado a</rdfs:label>
     <rdfs:domain rdf:resource="http://openuniversitydata/def/economia-y-patrimonio#PresupuestoGastos"/>
+    <rdfs:range>
+      <owl:Class rdf:about="http://openuniversitydata/def/economia-y-patrimonio#Universidad">
+        <rdfs:label>Universidad</rdfs:label>
+      </owl:Class>
+    </rdfs:range>
+
   </owl:ObjectProperty>
 
   <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/identifier">
