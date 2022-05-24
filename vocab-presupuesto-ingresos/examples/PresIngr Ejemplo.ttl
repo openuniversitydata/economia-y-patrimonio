@@ -1,0 +1,35 @@
+ @prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ecpat: <http://openuniversitydata/def/economia-y-patrimonio#> .
+@prefix geo: <http://www.owl-ontologies.com/geo#> .
+@prefix geosparql: <http://www.owl-ontologies.com/geosparql#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix univ: <http://openuniversitydata/def#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.example.org/openuniversitydata/presupuesto-ingresos/004> a ecpat:PresupuestoIngresos ;
+    ecpat:fechaReferencia "2022-01-24"^^xsd:date ;
+    ecpat:creditoInicial "350000"^^xsd:integer ;
+    ecpat:modificaciones "2000"^^xsd:integer ;
+    ecpat:creditoTotal "352000"^^xsd:integer ;
+    ecpat:derechosReconocidosNetos "13000"^^xsd:integer ;
+    ecpat:recaudacionNeta "12570"^^xsd:integer ;
+    ecpat:capitulo <http://openuniversitydata/kos/economia-y-patrimonio/capitulo/tasas-precios-publicos-y-otros-ingresos> ;
+    ecpat:articulo <http://openuniversitydata/kos/economia-y-patrimonio/articulo/precios-publicos> ;
+    ecpat:concepto <http://openuniversitydata/kos/economia-y-patrimonio/concepto/derechos-de-matricula-en-ensenianza-oficial> ;
+    ecpat:subconcepto <http://openuniversitydata/kos/economia-y-patrimonio/subconcepto/grado-primer-y-segundo-ciclo> ;
+    ecpat:partida <http://openuniversitydata/kos/economia-y-patrimonio/partida/derechos-de-matricula-en-ingenieria-informatica> ;
+    ecpat:seccion <http://openuniversitydata/kos/economia-y-patrimonio/seccion/campus-y-centros> ;
+    ecpat:servicio <http://openuniversitydata/kos/economia-y-patrimonio/servicio/campus-de-montegancedo> ;
+    ecpat:unidadDeCoste <http://openuniversitydata/kos/economia-y-patrimonio/unidad-de-coste/investigacion-campus-montegancedo> ;
+    ecpat:organicaLibre1 <http://openuniversitydata/kos/economia-y-patrimonio/organica-libre-1/centros-de-investigacion> ;
+    ecpat:organicaLibre2 <http://openuniversitydata/kos/economia-y-patrimonio/organica-libre-2/centro-de-tecnologia-biomedica> ;
+    ecpat:vinculadoA <http://www.example.org/openuniversitydata/universidad/UPM> ;
+    ecpat:tieneAsociado <http://www.example.org/openuniversitydata/curso/2022> .
+    
+<http://www.example.org/openuniversitydata/universidad/UPM> a univ:Universidad ;
+    dct:identifier "025"^^xsd:string .
+
+<http://www.example.org/openuniversitydata/curso/2022> a ecpat:Anio .
