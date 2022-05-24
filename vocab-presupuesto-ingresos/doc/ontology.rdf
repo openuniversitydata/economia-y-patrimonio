@@ -1,0 +1,683 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://openuniversitydata/def#"
+     xml:base="http://openuniversitydata/def"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://openuniversitydata/def#">
+        <dc:creator>Víctor Morcuende</dc:creator>
+        <dc:description>Ontology code created by Chowlk</dc:description>
+        <dc:title>PresIngr Ontology</dc:title>
+        <owl:versionInfo>0.0.2</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://openuniversitydata/def/economia-y-patrimonio#articulo -->
+
+
+    <owl:ObjectProperty rdf:about="http://openuniversitydata/def/economia-y-patrimonio#articulo">
+        <rdfs:domain rdf:resource="http://openuniversitydata/def/economia-y-patrimonio#PresupuestoIngresos"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="http://openuniversitydata/kos/economia-y-patrimonio/articulo"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label>articulo</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openuniversitydata/def/economia-y-patrimonio#capitulo -->
+
+
+    <owl:ObjectProperty rdf:about="http://openuniversitydata/def/economia-y-patrimonio#capitulo">
+        <rdfs:domain rdf:resource="http://openuniversitydata/def/economia-y-patrimonio#PresupuestoIngresos"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="http://openuniversitydata/kos/economia-y-patrimonio/capitulo"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label>capitulo</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openuniversitydata/def/economia-y-patrimonio#concepto -->
+
+
+    <owl:ObjectProperty rdf:about="http://openuniversitydata/def/economia-y-patrimonio#concepto">
+        <rdfs:domain rdf:resource="http://openuniversitydata/def/economia-y-patrimonio#PresupuestoIngresos"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="http://openuniversitydata/kos/economia-y-patrimonio/concepto"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label>concepto</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openuniversitydata/def/economia-y-patrimonio#organicaLibre1 -->
+
+
+    <owl:ObjectProperty rdf:about="http://openuniversitydata/def/economia-y-patrimonio#organicaLibre1">
+        <rdfs:domain rdf:resource="http://openuniversitydata/def/economia-y-patrimonio#PresupuestoIngresos"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="http://openuniversitydata/kos/economia-y-patrimonio/organica-libre-1"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label>organica libre1</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openuniversitydata/def/economia-y-patrimonio#organicaLibre2 -->
+
+
+    <owl:ObjectProperty rdf:about="http://openuniversitydata/def/economia-y-patrimonio#organicaLibre2">
+        <rdfs:domain rdf:resource="http://openuniversitydata/def/economia-y-patrimonio#PresupuestoIngresos"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="http://openuniversitydata/kos/economia-y-patrimonio/organica-libre-2"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label>organica libre2</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openuniversitydata/def/economia-y-patrimonio#partida -->
+
+
+    <owl:ObjectProperty rdf:about="http://openuniversitydata/def/economia-y-patrimonio#partida">
+        <rdfs:domain rdf:resource="http://openuniversitydata/def/economia-y-patrimonio#PresupuestoIngresos"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="http://openuniversitydata/kos/economia-y-patrimonio/partida"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label>partida</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openuniversitydata/def/economia-y-patrimonio#seccion -->
+
+
+    <owl:ObjectProperty rdf:about="http://openuniversitydata/def/economia-y-patrimonio#seccion">
+        <rdfs:domain rdf:resource="http://openuniversitydata/def/economia-y-patrimonio#PresupuestoIngresos"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="http://openuniversitydata/kos/economia-y-patrimonio/seccion"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label>seccion</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openuniversitydata/def/economia-y-patrimonio#servicio -->
+
+
+    <owl:ObjectProperty rdf:about="http://openuniversitydata/def/economia-y-patrimonio#servicio">
+        <rdfs:domain rdf:resource="http://openuniversitydata/def/economia-y-patrimonio#PresupuestoIngresos"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="http://openuniversitydata/kos/economia-y-patrimonio/servicio"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label>servicio</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openuniversitydata/def/economia-y-patrimonio#subconcepto -->
+
+
+    <owl:ObjectProperty rdf:about="http://openuniversitydata/def/economia-y-patrimonio#subconcepto">
+        <rdfs:domain rdf:resource="http://openuniversitydata/def/economia-y-patrimonio#PresupuestoIngresos"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="http://openuniversitydata/kos/economia-y-patrimonio/subconcepto"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label>subconcepto</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openuniversitydata/def/economia-y-patrimonio#tieneAsociado -->
+
+
+    <owl:ObjectProperty rdf:about="http://openuniversitydata/def/economia-y-patrimonio#tieneAsociado">
+        <rdfs:domain rdf:resource="http://openuniversitydata/def/economia-y-patrimonio#PresupuestoIngresos"/>
+        <rdfs:range rdf:resource="http://openuniversitydata/def/economia-y-patrimonio#Anio"/>
+        <rdfs:label>tiene asociado</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openuniversitydata/def/economia-y-patrimonio#unidadDeCoste -->
+
+
+    <owl:ObjectProperty rdf:about="http://openuniversitydata/def/economia-y-patrimonio#unidadDeCoste">
+        <rdfs:domain rdf:resource="http://openuniversitydata/def/economia-y-patrimonio#PresupuestoIngresos"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="http://openuniversitydata/kos/economia-y-patrimonio/unidad-de-coste"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label>unidad de coste</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openuniversitydata/def/economia-y-patrimonio#vinculadoA -->
+
+
+    <owl:ObjectProperty rdf:about="http://openuniversitydata/def/economia-y-patrimonio#vinculadoA">
+        <rdfs:domain rdf:resource="http://openuniversitydata/def/economia-y-patrimonio#PresupuestoIngresos"/>
+        <rdfs:label>vinculado a</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/geosparql#asWKT -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/geosparql#asWKT">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/geosparql#Geometry"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#wKTLiteral"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/geosparql#hasGeometry -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/geosparql#hasGeometry">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/geosparql#Geometry"/>
+        <rdfs:range rdf:resource="http://www.owl-ontologies.com/geosparql#Feature"/>
+        <rdfs:label>has geometry</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    
+
+
+    <!-- http://www.w3.org/ns/org#hasSite -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/org#hasSite">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/org#Organization"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/org#Site"/>
+        <rdfs:label>has site</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://openuniversitydata/def/economia-y-patrimonio#creditoInicial -->
+
+
+    <owl:DatatypeProperty rdf:about="http://openuniversitydata/def/economia-y-patrimonio#creditoInicial">
+        <rdfs:domain rdf:resource="http://openuniversitydata/def/economia-y-patrimonio#PresupuestoIngresos"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>credito inicial</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://openuniversitydata/def/economia-y-patrimonio#creditoTotal -->
+
+
+    <owl:DatatypeProperty rdf:about="http://openuniversitydata/def/economia-y-patrimonio#creditoTotal">
+        <rdfs:domain rdf:resource="http://openuniversitydata/def/economia-y-patrimonio#PresupuestoIngresos"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>credito total</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://openuniversitydata/def/economia-y-patrimonio#derechosReconocidosNetos -->
+
+
+    <owl:DatatypeProperty rdf:about="http://openuniversitydata/def/economia-y-patrimonio#derechosReconocidosNetos">
+        <rdfs:domain rdf:resource="http://openuniversitydata/def/economia-y-patrimonio#PresupuestoIngresos"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>derechos reconocidos netos</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://openuniversitydata/def/economia-y-patrimonio#fechaReferencia -->
+
+
+    <owl:DatatypeProperty rdf:about="http://openuniversitydata/def/economia-y-patrimonio#fechaReferencia">
+        <rdfs:domain rdf:resource="http://openuniversitydata/def/economia-y-patrimonio#PresupuestoIngresos"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:label>fecha referencia</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://openuniversitydata/def/economia-y-patrimonio#modificaciones -->
+
+
+    <owl:DatatypeProperty rdf:about="http://openuniversitydata/def/economia-y-patrimonio#modificaciones">
+        <rdfs:domain rdf:resource="http://openuniversitydata/def/economia-y-patrimonio#PresupuestoIngresos"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>modificaciones</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://openuniversitydata/def/economia-y-patrimonio#recaudacionNeta -->
+
+
+    <owl:DatatypeProperty rdf:about="http://openuniversitydata/def/economia-y-patrimonio#recaudacionNeta">
+        <rdfs:domain rdf:resource="http://openuniversitydata/def/economia-y-patrimonio#PresupuestoIngresos"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label>recaudacion neta</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/identifier">
+        <rdfs:domain rdf:resource="http://openuniversitydata/def#Universidad"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>identifier</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/geo#lat -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/geo#lat">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/geosparql#Point"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:label>lat</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/geo#long -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/geo#long">
+        <rdfs:domain rdf:resource="http://www.owl-ontologies.com/geosparql#Point"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:label>long</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/geosparql#asWKT -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/geosparql#asWKT"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://openuniversitydata/def#Universidad -->
+
+
+    <owl:Class rdf:about="http://openuniversitydata/def#Universidad">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#Organization"/>
+        <rdfs:label>Universidad</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://openuniversitydata/def/economia-y-patrimonio#Anio -->
+
+
+    <owl:Class rdf:about="http://openuniversitydata/def/economia-y-patrimonio#Anio">
+        <rdfs:label>Anio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://openuniversitydata/def/economia-y-patrimonio#PresupuestoIngresos -->
+
+
+    <owl:Class rdf:about="http://openuniversitydata/def/economia-y-patrimonio#PresupuestoIngresos">
+        <rdfs:label>Presupuesto Ingresos</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/geosparql#Feature -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/geosparql#Feature">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/geosparql#SpatialObject"/>
+        <rdfs:label>Feature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/geosparql#Geometry -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/geosparql#Geometry">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/geosparql#SpatialObject"/>
+        <rdfs:label>Geometry</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/geosparql#Point -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/geosparql#Point">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/geosparql#Geometry"/>
+        <rdfs:label>Point</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/geosparql#SpatialObject -->
+
+
+    <owl:Class rdf:about="http://www.owl-ontologies.com/geosparql#SpatialObject">
+        <rdfs:label>Spatial Object</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#wKTLiteral -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2001/XMLSchema#wKTLiteral"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    
+
+
+    <!-- http://www.w3.org/ns/org#Organization -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/org#Organization">
+        <rdfs:label>Organization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/org#Site -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/ns/org#Site">
+        <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/geosparql#Feature"/>
+        <rdfs:label>Site</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://openuniversitydata/kos/economia-y-patrimonio/articulo -->
+
+
+    <owl:NamedIndividual rdf:about="http://openuniversitydata/kos/economia-y-patrimonio/articulo"/>
+    
+
+
+    <!-- http://openuniversitydata/kos/economia-y-patrimonio/capitulo -->
+
+
+    <owl:NamedIndividual rdf:about="http://openuniversitydata/kos/economia-y-patrimonio/capitulo"/>
+    
+
+
+    <!-- http://openuniversitydata/kos/economia-y-patrimonio/concepto -->
+
+
+    <owl:NamedIndividual rdf:about="http://openuniversitydata/kos/economia-y-patrimonio/concepto"/>
+    
+
+
+    <!-- http://openuniversitydata/kos/economia-y-patrimonio/organica-libre-1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://openuniversitydata/kos/economia-y-patrimonio/organica-libre-1"/>
+    
+
+
+    <!-- http://openuniversitydata/kos/economia-y-patrimonio/organica-libre-2 -->
+
+
+    <owl:NamedIndividual rdf:about="http://openuniversitydata/kos/economia-y-patrimonio/organica-libre-2"/>
+    
+
+
+    <!-- http://openuniversitydata/kos/economia-y-patrimonio/partida -->
+
+
+    <owl:NamedIndividual rdf:about="http://openuniversitydata/kos/economia-y-patrimonio/partida"/>
+    
+
+
+    <!-- http://openuniversitydata/kos/economia-y-patrimonio/seccion -->
+
+
+    <owl:NamedIndividual rdf:about="http://openuniversitydata/kos/economia-y-patrimonio/seccion"/>
+    
+
+
+    <!-- http://openuniversitydata/kos/economia-y-patrimonio/servicio -->
+
+
+    <owl:NamedIndividual rdf:about="http://openuniversitydata/kos/economia-y-patrimonio/servicio"/>
+    
+
+
+    <!-- http://openuniversitydata/kos/economia-y-patrimonio/subconcepto -->
+
+
+    <owl:NamedIndividual rdf:about="http://openuniversitydata/kos/economia-y-patrimonio/subconcepto"/>
+    
+
+
+    <!-- http://openuniversitydata/kos/economia-y-patrimonio/unidad-de-coste -->
+
+
+    <owl:NamedIndividual rdf:about="http://openuniversitydata/kos/economia-y-patrimonio/unidad-de-coste"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://www.owl-ontologies.com/geosparql#asWKT">
+        <rdfs:label>as w k t</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
